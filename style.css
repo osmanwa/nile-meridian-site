@@ -99,36 +99,6 @@ blockquote {
   border-left: 4px solid var(--field);
   color: var(--muted);
 }
-.state { fill: var(--card); stroke: var(--border); }
-.disputed { fill: url(#hatch); }
-.marker { stroke: var(--bg); }
-.marker.town, .marker.city, .marker.camp { fill: var(--field); }
-.marker.state, .marker.area, .marker.region { fill: var(--nile); fill-opacity: 0.35; }
-.marker-label {
-  fill: var(--fg);
-  font-size: 11px;
-  paint-order: stroke;
-  stroke: var(--bg);
-  stroke-width: 3px;
-}
-body.wire header, body.wire main, body.wire footer { max-width: 1100px; }
-#map svg { display: block; max-width: 720px; height: auto; margin: 0 auto; }
-#map .map-credit { max-width: 720px; margin: 0.5rem auto 0; }
-#columns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
-#columns ul, #places ul { list-style: none; padding: 0; }
-#columns li, #places li { margin: 0.4rem 0; }
-.lead { font-size: 1.5rem; margin: 0.75rem 0; }
-.lead::after { display: none; }
-.lead a, .lead a:visited {
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Charter, Georgia, serif;
-  color: var(--fg);
-}
-.meta, .tr { color: var(--muted); font-size: 0.8rem; }
-.tr { font-style: italic; }
-.map-credit { color: var(--muted); font-size: 0.8rem; }
-@media (max-width: 699px) {
-  #columns { grid-template-columns: 1fr; }
-}
 @media (min-width: 600px) {
   .facts { grid-template-columns: 1fr 1fr; }
   header h1 { font-size: 2.6rem; }
