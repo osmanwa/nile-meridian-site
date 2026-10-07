@@ -17,7 +17,127 @@
       <p>If you spot an error, or represent a party named here and wish to respond, contact the editors. Corrections and replies are logged with the date of review.</p>
     </section>
     <section id="cases">
-      <p class="empty">No cases are published yet.</p>
+      <article id="anthropic-gtg-84002-deadshot" class="case">
+        <h2>GTG-84002 &quot;Deadshot&quot;: AI-assisted operation targeting UN accountability on Sudan</h2>
+        <p>2025-2026 (disrupted between December 2025 and August 2026). Status: unknown</p>
+        <p>Attributed actor: UAE government officials (high confidence as stated by the source)</p>
+        <blockquote>Although the operation was built so that it could not be traced back to the actors, our investigation linked it with high confidence to UAE government officials.</blockquote>
+        <h3>Attributed by</h3>
+        <ul>
+          <li><a href="https://www.anthropic.com/threat-intelligence-report-september-2026" rel="noopener">Countering misuse of AI: September 2026</a> (Anthropic, 2026-09-10)</li>
+          <li><a href="https://www.france24.com/en/live-news/20260911-anthropic-says-uae-linked-ai-op-targeted-un-experts-over-sudan" rel="noopener">Anthropic says UAE-linked AI op targeted UN experts over Sudan</a> (AFP via France 24, 2026-09-12)</li>
+        </ul>
+        <p>According to Anthropic, a single actor used Claude to maintain an AI persona that ran five coordinated lines of activity: a network of about 300 inauthentic influencer accounts; a front NGO that copied a real Swiss organization&#x27;s identity and published state-authored human-rights reports; ghost-written testimonies intended for delivery by two people at the 62nd session of the UN Human Rights Council, written so that neither mentioned the UAE; profiles of 18 members of the European Parliament and prominent journalists; and counter-accountability dossiers on UN Special Rapporteurs who had criticized the UAE&#x27;s conduct in Sudan. Anthropic banned the accounts on its platform and states it cannot confirm whether the testimonies or dossiers reached their intended audiences. AFP reported that the UAE did not immediately respond to its request for comment.</p>
+        <h3>Targets</h3>
+        <ul>
+          <li>UN Human Rights Council proceedings</li>
+          <li>UN Special Rapporteurs</li>
+          <li>Members of the European Parliament</li>
+          <li>Journalists</li>
+          <li>Organisations described as Muslim Brotherhood-linked</li>
+        </ul>
+        <h3>Platforms</h3>
+        <ul>
+          <li>Social media (platforms not named in the report)</li>
+          <li>Claude (Anthropic)</li>
+        </ul>
+        <h3>Tactics (DISARM)</h3>
+        <ul>
+          <li>T0143.002 Fabricated Persona: Network of approximately 300 inauthentic influencer social media accounts.</li>
+          <li>T0097.207 NGO Persona: Front NGO publishing state-authored human-rights reports.</li>
+          <li>T0143.003 Impersonated Persona: Front NGO copied a real Swiss organization&#x27;s identity; the actor also borrowed the identity of a real Sudanese human rights organization.</li>
+          <li>T0085.001 Develop AI-Generated Text: Ghost-written UN testimony and other content produced with an AI model.</li>
+          <li>T0154.001 AI LLM Platform: Claude used to maintain the operation&#x27;s persona across hundreds of sessions.</li>
+        </ul>
+        <h3>Front organisations</h3>
+        <ul>
+          <li>Front NGO publishing state-authored human-rights reports (impersonated: A real Swiss organization (not named in the public report))</li>
+          <li>Borrowed identity used for UN testimony (impersonated: A real Sudanese human rights organization (not named in the public report))</li>
+        </ul>
+        <p class="reviewed">Last reviewed 2026-10-07</p>
+      </article>
+      <article id="beam-2024-sama-sudan-network" class="case">
+        <h2>&quot;Sama Sudan&quot; Facebook network supporting the Sudanese army</h2>
+        <p>2023-2024. Status: unknown</p>
+        <p>Attributed actor: Not attributed (pages managed mainly from Türkiye and Syria)</p>
+        <blockquote>تتكون هذه الشبكة من خمس صفحات رئيسة، يتابعها في المجمل أكثر من 787 ألف متابع، وتدار معظمها من تركيا وسوريا. (Translation: This network consists of five main pages, followed in total by more than 787,000 followers, most of which are managed from Türkiye and Syria.)</blockquote>
+        <h3>Attributed by</h3>
+        <ul>
+          <li><a href="https://www.beamreports.com/2024/12/20/%d9%85%d9%86-%d8%aa%d8%b1%d9%83%d9%8a%d8%a7-%d9%88%d8%b3%d9%88%d8%b1%d9%8a%d8%a7-%d8%b4%d8%a8%d9%83%d8%a9-%d8%aa%d8%b6%d9%84%d9%8a%d9%84-%d8%aa%d9%8f%d9%86%d8%a7%d8%b5%d8%b1-%d8%a7%d9%84%d8%ac%d9%8a/" rel="noopener">من تركيا وسوريا.. شبكة تضليل تُناصر الجيش السوداني وتهاجم قوى مدنية (From Türkiye and Syria: a disinformation network supports the Sudanese army and attacks civilian forces)</a> (Beam Reports, 2024-12-20)</li>
+        </ul>
+        <p>Beam Reports identified a network of five main Facebook pages with more than 787,000 followers in total, most managed from Türkiye and Syria, that published misleading content supporting the Sudanese army and attacking the Rapid Support Forces and civilian political forces. A larger set of accounts amplified the pages by sharing their content into Facebook groups; Beam notes some of these accounts appear to post automatically.</p>
+        <h3>Targets</h3>
+        <ul>
+          <li>Sudanese audiences on Facebook</li>
+          <li>Civilian political coalitions</li>
+          <li>Rapid Support Forces</li>
+        </ul>
+        <h3>Platforms</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>X</li>
+          <li>TikTok</li>
+        </ul>
+        <h3>Tactics (DISARM)</h3>
+        <ul>
+          <li>T0151.003 Online Community Page: Five core pages with more than 787,000 combined followers.</li>
+          <li>T0119.001 Post across Groups: Accounts repeatedly shared network content into larger Facebook groups.</li>
+          <li>T0049.003 Bots Amplify via Automated Forwarding and Reposting: Beam notes some amplifying accounts appear to be run automatically, posting roughly once a minute.</li>
+        </ul>
+        <p class="reviewed">Last reviewed 2026-10-07</p>
+      </article>
+      <article id="dfrlab-2023-rsf-copypasta-network" class="case">
+        <h2>Copy-paste reply network amplifying RSF messaging on Twitter</h2>
+        <p>April-July 2023. Status: unknown</p>
+        <p>Attributed actor: Not attributed (network amplified RSF messaging; operator not identified)</p>
+        <blockquote>Evidence of a potential inauthentic network of Twitter accounts amplifying the RSF continues to emerge, suggesting coordinated efforts to enhance the image of the paramilitary group both before and after the current conflict broke out.</blockquote>
+        <h3>Attributed by</h3>
+        <ul>
+          <li><a href="https://dfrlab.org/2023/08/02/suspicious-networks-copypasta-replies-to-sudanese-paramilitary-groups-tweets/" rel="noopener">Suspicious network’s copypasta replies to Sudanese paramilitary group’s tweets</a> (DFRLab, 2023-08-02)</li>
+          <li><a href="https://dfrlab.org/2023/04/18/potentially-hijacked-twitter-accounts-promote-sudanese-paramilitary-force/" rel="noopener">Potentially hijacked Twitter accounts promote Sudanese paramilitary force</a> (DFRLab, 2023-04-18)</li>
+        </ul>
+        <p>DFRLab found 227 Twitter accounts that replied to tweets by Hemedti and two RSF accounts using pre-written text. Many accounts appeared to have been originally operated by real users over a decade ago before seemingly being hijacked or sold to third parties; every account was created on one of three days in 2012. An earlier DFRLab analysis in April 2023 described potentially hijacked accounts promoting the RSF. DFRLab does not identify who ran the network.</p>
+        <h3>Targets</h3>
+        <ul>
+          <li>Arabic-speaking audiences on Twitter</li>
+        </ul>
+        <h3>Platforms</h3>
+        <ul>
+          <li>Twitter/X</li>
+        </ul>
+        <h3>Tactics (DISARM)</h3>
+        <ul>
+          <li>T0084.001 Use Copypasta: 227 accounts posted identical pre-written replies to RSF-linked tweets.</li>
+        </ul>
+        <p class="reviewed">Last reviewed 2026-10-07</p>
+      </article>
+      <article id="meta-2021-rsf-network" class="case">
+        <h2>RSF-linked Facebook and Instagram network</h2>
+        <p>Removed September 2021. Status: disrupted</p>
+        <p>Attributed actor: Rapid Support Forces (RSF) (high confidence as stated by the source)</p>
+        <blockquote>linked it to the Sudanese Rapid Support Forces, a paramilitary group operated by the Sudanese Government.</blockquote>
+        <h3>Attributed by</h3>
+        <ul>
+          <li><a href="https://about.fb.com/news/2021/10/september-2021-coordinated-inauthentic-behavior-report/" rel="noopener">September 2021 Coordinated Inauthentic Behavior Report</a> (Meta, 2021-10-11)</li>
+          <li><a href="https://dfrlab.org/2021/10/28/sudanese-facebook-network-promoting-paramilitary-group-removed-month-before-coup/" rel="noopener">Sudanese Facebook network promoting paramilitary group removed month before coup</a> (DFRLab, 2021-10-28)</li>
+        </ul>
+        <p>Meta removed 116 Pages, 666 Facebook accounts, 69 Groups and 92 Instagram accounts for coordinated inauthentic behaviour targeting audiences in Sudan, and linked the network to the Rapid Support Forces. The removal came about a month before the October 2021 coup.</p>
+        <h3>Targets</h3>
+        <ul>
+          <li>Domestic audiences in Sudan</li>
+        </ul>
+        <h3>Platforms</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Instagram</li>
+        </ul>
+        <h3>Tactics (DISARM)</h3>
+        <ul>
+          <li>T0151.003 Online Community Page: 116 Facebook Pages removed.</li>
+          <li>T0151.002 Online Community Group: 69 Facebook Groups removed.</li>
+        </ul>
+        <p class="reviewed">Last reviewed 2026-10-07</p>
+      </article>
     </section>
   </main>
   <footer>

@@ -1,19 +1,26 @@
 :root {
-  --bg: #fbfaf7;
-  --fg: #1d2330;
-  --muted: #5a6275;
-  --accent: #0b5d6b;
+  /* Palette drawn from Sudan's 1956 independence flag: Nile blue, desert yellow, field green. */
+  --nile: #143f96;
+  --desert: #f2cf1d;
+  --field: #0a7a3a;
+  --bg: #fbfaf4;
+  --fg: #142038;
+  --muted: #55607a;
+  --accent: var(--nile);
   --card: #ffffff;
-  --border: #dcd8cd;
+  --border: #dad9cc;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #12161f;
-    --fg: #e8e6e0;
-    --muted: #a3a9b8;
-    --accent: #5fc0d0;
-    --card: #1a202c;
-    --border: #2d3548;
+    color-scheme: dark;
+    --nile: #86a9ff;
+    --desert: #f2d84b;
+    --field: #57c98b;
+    --bg: #0d1626;
+    --fg: #e8edf5;
+    --muted: #9fb0c8;
+    --card: #142037;
+    --border: #26375a;
   }
 }
 * { box-sizing: border-box; }
@@ -30,9 +37,32 @@ header, main, footer {
   margin: 0 auto;
   padding: 1.5rem 1rem;
 }
-header h1 { margin: 0; font-size: 2rem; color: var(--accent); }
+body::before {
+  content: "";
+  display: block;
+  height: 12px;
+  background: linear-gradient(
+    to bottom,
+    var(--nile) 0 33.34%,
+    var(--desert) 33.34% 66.67%,
+    var(--field) 66.67% 100%
+  );
+}
+h1, h2 {
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Charter, Georgia, serif;
+  text-wrap: balance;
+}
+header h1 { margin: 0; font-size: 2.2rem; color: var(--nile); letter-spacing: -0.01em; }
 .tagline { margin: 0.25rem 0 0; color: var(--muted); font-size: 1.1rem; }
-h2 { margin-top: 2rem; font-size: 1.3rem; }
+h2 { margin-top: 2rem; font-size: 1.35rem; }
+h2::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 4px;
+  margin-top: 0.35rem;
+  background: var(--desert);
+}
 ul { padding-left: 1.25rem; }
 .facts { list-style: none; padding: 0; display: grid; gap: 0.75rem; }
 .facts li {
@@ -41,7 +71,13 @@ ul { padding-left: 1.25rem; }
   border-radius: 8px;
   padding: 0.75rem 1rem;
 }
-.figure { display: block; font-size: 1.5rem; font-weight: 700; color: var(--accent); }
+.figure {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--field);
+  font-variant-numeric: tabular-nums;
+}
 .source { display: block; color: var(--muted); font-size: 0.9rem; }
 footer { color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--border); }
 footer p { margin: 0.25rem 0; }
@@ -60,7 +96,7 @@ nav a, header a { color: var(--accent); }
 blockquote {
   margin: 1rem 0;
   padding: 0.25rem 1rem;
-  border-left: 4px solid var(--accent);
+  border-left: 4px solid var(--field);
   color: var(--muted);
 }
 @media (min-width: 600px) {
