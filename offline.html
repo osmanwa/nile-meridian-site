@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Offline: Nile Meridian</title>
+  <meta name="nm-counter" content="https://nilemeridian.goatcounter.com/count">
+  <meta name="theme-color" content="#143f96" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1626" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script type="speculationrules">{"prefetch": [{"source": "list", "urls": ["index.html", "wire.html", "tracker.html"], "eagerness": "conservative"}]}</script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="appbar">
+    <a class="brand" href="index.html">Nile Meridian</a>
+    <nav class="topnav" aria-label="Sections"><a href="index.html">Home</a><a href="wire.html">Wire</a><a href="wire.html#mapview">Map</a><a href="tracker.html">Tracker</a></nav>
+  </header>
+  <div id="netstatus" class="netstatus" role="status" aria-live="polite" hidden></div>
+  <main class="offline">
+    <h1>You're offline</h1>
+    <p>This page hasn't been saved on this device yet. Pages you have opened before are available offline:</p>
+    <ul>
+      <li><a href="wire.html">Wire</a></li>
+      <li><a href="tracker.html">Influence operations tracker</a></li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </main>
+  <nav class="tabbar" aria-label="Sections"><a href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11.5 12 5l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="wire.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 10h14M5 14h9M5 18h9"/></svg><span>Wire</span></a><a href="wire.html#mapview"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span>Map</span></a><a href="tracker.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4a7 7 0 1 0 0 14 7 7 0 0 0 0-14zM20 20l-4-4"/></svg><span>Tracker</span></a></nav>
+</body>
+</html>
