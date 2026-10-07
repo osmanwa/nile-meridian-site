@@ -1,6 +1,6 @@
 // Nile Meridian service worker. Pages: network first (4 s timeout), then the last cached copy, then the
 // offline page. Static files: cache first. Only same-origin GETs are handled; outlet links pass through.
-const VERSION = "202610071514";
+const VERSION = "202610071614";
 const CACHE = "nm-" + VERSION;
 const PRECACHE = ["./", "index.html", "wire.html", "tracker.html", "style.css", "app.js", "offline.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png", "icons/icon-maskable-512.png", "icons/apple-touch-icon.png", "icons/favicon-32.png"];
 self.addEventListener("install", (e) => {
